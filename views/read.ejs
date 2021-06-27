@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Post Read</title></head>
+    <body>
+        <h2>제목: <%=post.title%></h2>
+        <h5>작성자:  <%=post.author%></h5>
+        <h6>작성시간:  <%=post.created_at%></h6>
+        내용: <%=post.body%><br>
+        <form action="/board/edit/<%=post.id%>" method="GET">
+            <button type="submit">수정</button>
+        </form>
+        <form action="/board/delete/<%=post.id%>" method="POST">
+            <button type="submit">삭제</button>
+        </form>
+        <a href="/board">뒤로가기</a>
+    </body>
+</html>

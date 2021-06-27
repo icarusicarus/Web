@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Post Write</title></head>
+    <body>
+        <h1>글을 작성해주세요</h1><br>
+        <form action='/board/write' method='POST'>
+            제목<input type='text' name='title'><br>
+            내용<textarea id="box" name="body" rows=15 cols=20></textarea><br>
+            <button type='submit'>글작성</button>
+        </form>
+        <a href="/board">뒤로가기</a>
+    </body>
+</html>
